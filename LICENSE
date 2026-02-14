@@ -1,0 +1,23 @@
+
+**Fuentes del título y metadatos de la tesis:** portada/página 1 del PDF:contentReference[oaicite:1]{index=1} y el resumen en página 4:contentReference[oaicite:2]{index=2}.
+
+---
+
+## ¿Subirías alguna otra cosa al repo? Sí: esto le sube mucho el “nivel” (y te ahorra quilombos)
+
+1. **README** (listo, arriba) + **descripción del repo** en GitHub (“About”) y topics.  
+2. **`requirements.txt`** o **`environment.yml`** para reproducibilidad.
+3. **`LICENSE`** (y si querés, dual: código vs texto/figuras).
+4. **`.gitignore`** (Python/Jupyter + outputs).  
+5. **Estructura estándar** (aunque sea mínima):
+   - `data/` (si hay datos livianos) + `data/README.md` explicando origen
+   - `outputs/` (vacío con `.gitkeep`) y aclarar que no se versiona
+   - `figures/` (figuras finales “congeladas” para la tesis)
+6. **`CITATION.cff`** (para que GitHub muestre cómo citar).
+7. **Release/tag** para la versión final de tesis (ej. `v1.0-thesis`) y, si podés, **Zenodo** para DOI.
+8. Si hay archivos grandes (model outputs): **Git LFS** o links a almacenamiento externo (Drive/Zenodo/OSF) + checksums.
+
+Si querés, también te puedo armar:
+- un `.gitignore` bien específico para tu flujo (UW + notebooks + figs),
+- `CITATION.cff` y un `requirements.txt` base según lo que haya dentro de `UW/` y `plot/`.
+::contentReference[oaicite:3]{index=3}
